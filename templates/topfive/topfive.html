@@ -1,0 +1,30 @@
+<html lang="en">
+{% load staticfiles %}
+<head>
+    <h1 style="margin-left: 40% ">Top 5 Tweets</h1>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TASk</title>
+</head>
+<body>
+<div style="margin-top: 1%; margin-left: 2%;">
+    <h1 color:red>Top 5 Tweets by <strong style="color:blue">ELON MUSK</strong></h1>
+        {% for o in elon %}
+    <tr>
+        <td><li>{{o}}</li> </td>
+        <br>
+     </tr>
+
+{% endfor %}
+
+<h1 color:red>Top 5 Tweets by <strong style="color:red">NAVAL</strong></h1>
+{% for o in nav %}
+<tr>
+<td><li>{{o}}</li> </td>
+<br>
+</tr>
+{% endfor %}
+<div>
+    
+</body>
+</html>
